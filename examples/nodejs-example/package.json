@@ -1,15 +1,15 @@
 {
   "name": "nodejs-example",
+  "private": true,
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test index.test.mjs && node --test index.test.cjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dweb-browser/zstd-wasm": "*"
+    "@dweb-browser/zstd-wasm": "link:../../pkg/"
   }
 }
