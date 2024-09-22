@@ -61,6 +61,12 @@ Object.assign(packageJson, {
       require: "./zstd_wasm.js",
     },
     "./zstd_wasm_bg.wasm": "./zstd_wasm_bg.wasm",
+    // 向下兼容
+    "./zstd_wasm_bg_wasm.ts": {
+      types: "./zstd_wasm_bg_wasm.ts",
+      import: "./zstd_wasm_bg_wasm.mjs",
+      require: "./zstd_wasm_bg_wasm.js",
+    },
     "./zstd_wasm_bg_wasm": {
       types: "./zstd_wasm_bg_wasm.ts",
       import: "./zstd_wasm_bg_wasm.mjs",
